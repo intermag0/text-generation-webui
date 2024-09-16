@@ -1,3 +1,26 @@
+
+Instructuibs
+
+pip install
+
+pip3 install torch==2.2.2+cu121 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 --user
+
+Update Config in config.json for continuelm
+
+  "models": [
+    {
+      "title": "Text Generation WebUI",
+      "provider": "text-gen-webui",
+      "apiBase": "http://localhost:5000/v1",
+      "model": "MODEL_NAME"
+    }
+  ],
+
+download models
+https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/tree/main
+
+Put into the models folder
+  
 # Text generation web UI
 
 A Gradio web UI for Large Language Models.
